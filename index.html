@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code To Career India | Learn Python, SQL, Excel & Data Analytics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #111827; background: #F9FAFB; }
+
+        header { background: #111827; color: #F9FAFB; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 20px; font-weight: bold; }
+        nav a { color: #E5E7EB; margin-left: 16px; text-decoration: none; font-size: 14px; }
+        nav a:hover { color: #FFFFFF; }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+
+        .hero { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; padding: 32px 0; }
+        .hero-text { flex: 1 1 280px; }
+        .hero h1 { font-size: 32px; margin-bottom: 12px; }
+        .hero p { font-size: 16px; margin-bottom: 16px; color: #4B5563; }
+        .badge { display: inline-block; background: #DBEAFE; color: #1D4ED8; padding: 4px 10px; border-radius: 999px; font-size: 12px; margin-bottom: 8px; }
+
+        .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+        .btn { padding: 8px 16px; border-radius: 999px; font-size: 14px; text-decoration: none; display: inline-block; cursor: pointer; border: none; }
+        .btn-primary { background: #2563EB; color: white; }
+        .btn-primary:hover { background: #1D4ED8; }
+        .btn-ghost { border: 1px solid #D1D5DB; color: #111827; background: white; }
+        .btn-ghost:hover { background: #F3F4F6; }
+
+        section { padding: 32px 0; border-top: 1px solid #E5E7EB; }
+        section h2 { font-size: 24px; margin-bottom: 12px; color: #111827; }
+        section p { color: #4B5563; margin-bottom: 12px; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 16px; }
+        .card { background: white; border-radius: 12px; padding: 16px; border: 1px solid #E5E7EB; transition: box-shadow 0.3s; }
+        .card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .card h3 { font-size: 18px; margin-bottom: 8px; color: #111827; }
+        .card p { font-size: 14px; color: #4B5563; margin-bottom: 12px; }
+        .tag { display: inline-block; font-size: 11px; background: #EEF2FF; color: #4F46E5; padding: 3px 8px; border-radius: 999px; margin-right: 4px; margin-bottom: 4px; }
+
+        .contact-box { background: white; border-radius: 12px; padding: 20px; border: 1px solid #E5E7EB; max-width: 480px; }
+        .contact-label { font-weight: bold; color: #111827; margin-top: 12px; }
+        .contact-box a { color: #2563EB; text-decoration: none; }
+        .contact-box a:hover { text-decoration: underline; }
+
+        footer { border-top: 1px solid #E5E7EB; padding: 16px; text-align: center; font-size: 13px; color: #6B7280; margin-top: 24px; }
+        footer a { color: #2563EB; text-decoration: none; }
+
+        @media (max-width: 640px) {
+            header { flex-direction: column; align-items: flex-start; }
+            nav { margin-top: 8px; }
+            .hero h1 { font-size: 24px; }
+            section h2 { font-size: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Code To Career India</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#free">Free Content</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <span class="badge">From zero to job-ready</span>
+            <h1>Learn Python, SQL, Excel & Data Analytics in Simple Hindi</h1>
+            <p>
+                Practical, project-based tutorials to take you from coding basics to real-world data analytics skills.
+                Start with free YouTube lessons and grow step by step.
+            </p>
+            <div class="buttons">
+                <a class="btn btn-primary" href="https://www.youtube.com/@codeToCareerIndia" target="_blank">
+                    Start Learning on YouTube
+                </a>
+                <a class="btn btn-ghost" href="https://www.instagram.com/codeToCareerIndia" target="_blank">
+                    Follow on Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Code To Career</h2>
+        <p>
+            Code To Career India helps students and working professionals build strong foundations in Python, SQL,
+            Excel and Data Analytics through clear explanations, practice questions and real projects.
+        </p>
+        <p>
+            The goal is simple: turn coding skills into a real career by focusing on interview-oriented topics,
+            portfolio projects and practical business use-cases.
+        </p>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <h2>What You Will Learn</h2>
+        <p>Start with any track based on your level. All content is designed for beginners.</p>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Python for Data</h3>
+                <p>Variables, loops, functions, Pandas, NumPy and real-world data projects to prepare you for analytics roles.</p>
+                <div>
+                    <span class="tag">Beginner</span>
+                    <span class="tag">Data Analytics</span>
+                    <span class="tag">Projects</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>SQL for Analysis</h3>
+                <p>From basic SELECT to joins, aggregations and window functions using real data sets like sales and marketing.</p>
+                <div>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Joins</span>
+                    <span class="tag">Interview</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Excel to Advanced</h3>
+                <p>Shortcuts, formulas, Pivot Tables, dashboards and tips to work faster in real office environments.</p>
+                <div>
+                    <span class="tag">Office</span>
+                    <span class="tag">Dashboards</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Data Analytics Roadmap</h3>
+                <p>Complete roadmap: skills, tools, projects and portfolio ideas to get your first analytics job.</p>
+                <div>
+                    <span class="tag">Career</span>
+                    <span class="tag">Roadmap</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Content Section -->
+    <section id="free">
+        <h2>Free Learning Resources</h2>
+        <p>Use these free resources to practice daily and track your progress.</p>
+
+        <div class="grid">
+            <div class="card">
+                <h3>YouTube Playlists</h3>
+                <p>Step-by-step playlists for Python, SQL, Excel and Data Analytics with Hindi explanations.</p>
+                <a class="btn btn-ghost" href="https://www.youtube.com/@codeToCareerIndia/playlists" target="_blank">
+                    View Playlists
+                </a>
+            </div>
+            <div class="card">
+                <h3>Practice Files</h3>
+                <p>Download datasets and Excel files used in videos so you can practice along.</p>
+                <a class="btn btn-ghost" href="#" target="_blank">
+                    Coming Soon
+                </a>
+            </div>
+            <div class="card">
+                <h3>Community Updates</h3>
+                <p>Follow on Instagram for daily tips, reels, and updates on new series and live sessions.</p>
+                <a class="btn btn-ghost" href="https://www.instagram.com/codeToCareerIndia" target="_blank">
+                    Follow Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact & Collaboration</h2>
+        <div class="contact-box">
+            <p>
+                If you have doubts, feedback, or want to collaborate, feel free to contact any time.
+                Replies are usually within 24-48 hours.
+            </p>
+
+            <p class="contact-label">Email</p>
+            <p>
+                <a href="mailto:codetocareerindia@gmail.com">
+                    codetocareerindia@gmail.com
+                </a>
+            </p>
+
+            <p class="contact-label">Instagram DM</p>
+            <p>
+                <a href="https://www.instagram.com/codeToCareerIndia" target="_blank">
+                    @codeToCareerIndia
+                </a>
+            </p>
+
+            <p class="contact-label">YouTube Channel</p>
+            <p>
+                <a href="https://www.youtube.com/@codeToCareerIndia" target="_blank">
+                    youtube.com/@codeToCareerIndia
+                </a>
+            </p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    © <span id="year"></span> Code To Career India · Built with HTML & CSS
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
