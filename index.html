@@ -1,222 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Code To Career India | Learn Python, SQL, Excel & Data Analytics</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; line-height: 1.6; color: #111827; background: #F9FAFB; }
-
-        header { background: #111827; color: #F9FAFB; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 20px; font-weight: bold; }
-        nav a { color: #E5E7EB; margin-left: 16px; text-decoration: none; font-size: 14px; }
-        nav a:hover { color: #FFFFFF; }
-
-        .container { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
-
-        .hero { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; padding: 32px 0; }
-        .hero-text { flex: 1 1 280px; }
-        .hero h1 { font-size: 32px; margin-bottom: 12px; }
-        .hero p { font-size: 16px; margin-bottom: 16px; color: #4B5563; }
-        .badge { display: inline-block; background: #DBEAFE; color: #1D4ED8; padding: 4px 10px; border-radius: 999px; font-size: 12px; margin-bottom: 8px; }
-
-        .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
-        .btn { padding: 8px 16px; border-radius: 999px; font-size: 14px; text-decoration: none; display: inline-block; cursor: pointer; border: none; }
-        .btn-primary { background: #2563EB; color: white; }
-        .btn-primary:hover { background: #1D4ED8; }
-        .btn-ghost { border: 1px solid #D1D5DB; color: #111827; background: white; }
-        .btn-ghost:hover { background: #F3F4F6; }
-
-        section { padding: 32px 0; border-top: 1px solid #E5E7EB; }
-        section h2 { font-size: 24px; margin-bottom: 12px; color: #111827; }
-        section p { color: #4B5563; margin-bottom: 12px; }
-
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 16px; }
-        .card { background: white; border-radius: 12px; padding: 16px; border: 1px solid #E5E7EB; transition: box-shadow 0.3s; }
-        .card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        .card h3 { font-size: 18px; margin-bottom: 8px; color: #111827; }
-        .card p { font-size: 14px; color: #4B5563; margin-bottom: 12px; }
-        .tag { display: inline-block; font-size: 11px; background: #EEF2FF; color: #4F46E5; padding: 3px 8px; border-radius: 999px; margin-right: 4px; margin-bottom: 4px; }
-
-        .contact-box { background: white; border-radius: 12px; padding: 20px; border: 1px solid #E5E7EB; max-width: 480px; }
-        .contact-label { font-weight: bold; color: #111827; margin-top: 12px; }
-        .contact-box a { color: #2563EB; text-decoration: none; }
-        .contact-box a:hover { text-decoration: underline; }
-
-        footer { border-top: 1px solid #E5E7EB; padding: 16px; text-align: center; font-size: 13px; color: #6B7280; margin-top: 24px; }
-        footer a { color: #2563EB; text-decoration: none; }
-
-        @media (max-width: 640px) {
-            header { flex-direction: column; align-items: flex-start; }
-            nav { margin-top: 8px; }
-            .hero h1 { font-size: 24px; }
-            section h2 { font-size: 20px; }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code To Career | Learn Python Basics</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #2563eb, #1e40af);
+      padding: 30px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header p {
+      margin: 8px 0 0;
+      font-size: 18px;
+    }
+    nav {
+      background: #020617;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #93c5fd;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #60a5fa;
+      border-bottom: 2px solid #1e40af;
+      padding-bottom: 5px;
+    }
+    h3 {
+      color: #93c5fd;
+      margin-top: 20px;
+    }
+    .card {
+      background: #020617;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 15px 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+    code {
+      background: #020617;
+      color: #a5f3fc;
+      padding: 5px 8px;
+      border-radius: 6px;
+      display: block;
+      margin: 8px 0;
+      overflow-x: auto;
+    }
+    footer {
+      background: #020617;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #9ca3af;
+    }
+    .social {
+      color: #93c5fd;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <div class="logo">Code To Career India</div>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#courses">Courses</a>
-        <a href="#free">Free Content</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <h1>Code To Career</h1>
+  <p>Learn Python from Zero to Career 🚀</p>
+  <p class="social">Follow us: 
+<a href="https://www.youtube.com/@codetocareerindia" target="_blank" style="color:#e0f2fe;">YouTube</a> |
+<a href="https://www.instagram.com/codetocareerindia" target="_blank" style="color:#e0f2fe;">Instagram</a>
+</p>
 </header>
 
-<div class="container">
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <span class="badge">From zero to job-ready</span>
-            <h1>Learn Python, SQL, Excel & Data Analytics in Simple Hindi</h1>
-            <p>
-                Practical, project-based tutorials to take you from coding basics to real-world data analytics skills.
-                Start with free YouTube lessons and grow step by step.
-            </p>
-            <div class="buttons">
-                <a class="btn btn-primary" href="https://www.youtube.com/@codeToCareerIndia" target="_blank">
-                    Start Learning on YouTube
-                </a>
-                <a class="btn btn-ghost" href="https://www.instagram.com/codeToCareerIndia" target="_blank">
-                    Follow on Instagram
-                </a>
-            </div>
-        </div>
-    </section>
+<nav>
+  <a href="#intro">Introduction</a>
+  <a href="#basics">Basics</a>
+  <a href="#operators">Operators</a>
+  <a href="#control">Control Flow</a>
+  <a href="#ds">Data Structures</a>
+  <a href="#functions">Functions</a>
+  <a href="#modules">Modules</a>
+</nav>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Code To Career</h2>
-        <p>
-            Code To Career India helps students and working professionals build strong foundations in Python, SQL,
-            Excel and Data Analytics through clear explanations, practice questions and real projects.
-        </p>
-        <p>
-            The goal is simple: turn coding skills into a real career by focusing on interview-oriented topics,
-            portfolio projects and practical business use-cases.
-        </p>
-    </section>
+<section id="intro">
+  <h2>Introduction to Python</h2>
+  <div class="card">
+    <p>Python is a high-level, interpreted, and beginner‑friendly programming language. It is widely used in web development, data science, AI, automation, and software development.</p>
+    <h3>Why Python?</h3>
+    <ul>
+      <li>Easy to read & write</li>
+      <li>Huge community support</li>
+      <li>Powerful libraries</li>
+      <li>High demand in jobs</li>
+    </ul>
+  </div>
+</section>
 
-    <!-- Courses Section -->
-    <section id="courses">
-        <h2>What You Will Learn</h2>
-        <p>Start with any track based on your level. All content is designed for beginners.</p>
+<section id="basics">
+  <h2>Python Basics</h2>
 
-        <div class="grid">
-            <div class="card">
-                <h3>Python for Data</h3>
-                <p>Variables, loops, functions, Pandas, NumPy and real-world data projects to prepare you for analytics roles.</p>
-                <div>
-                    <span class="tag">Beginner</span>
-                    <span class="tag">Data Analytics</span>
-                    <span class="tag">Projects</span>
-                </div>
-            </div>
+  <div class="card">
+    <h3>Installing Python</h3>
+    <p>Download Python from <b>python.org</b> and install it. Check installation:</p>
+    <code>python --version</code>
+  </div>
 
-            <div class="card">
-                <h3>SQL for Analysis</h3>
-                <p>From basic SELECT to joins, aggregations and window functions using real data sets like sales and marketing.</p>
-                <div>
-                    <span class="tag">SQL</span>
-                    <span class="tag">Joins</span>
-                    <span class="tag">Interview</span>
-                </div>
-            </div>
+  <div class="card">
+    <h3>Python Syntax</h3>
+    <code>print("Hello, Code To Career!")</code>
+  </div>
 
-            <div class="card">
-                <h3>Excel to Advanced</h3>
-                <p>Shortcuts, formulas, Pivot Tables, dashboards and tips to work faster in real office environments.</p>
-                <div>
-                    <span class="tag">Office</span>
-                    <span class="tag">Dashboards</span>
-                </div>
-            </div>
+  <div class="card">
+    <h3>Comments</h3>
+    <code># This is a single-line comment</code>
+  </div>
 
-            <div class="card">
-                <h3>Data Analytics Roadmap</h3>
-                <p>Complete roadmap: skills, tools, projects and portfolio ideas to get your first analytics job.</p>
-                <div>
-                    <span class="tag">Career</span>
-                    <span class="tag">Roadmap</span>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="card">
+    <h3>Keywords</h3>
+    <p>Keywords are reserved words like <b>if, else, for, while, def, class</b>.</p>
+  </div>
 
-    <!-- Free Content Section -->
-    <section id="free">
-        <h2>Free Learning Resources</h2>
-        <p>Use these free resources to practice daily and track your progress.</p>
+  <div class="card">
+    <h3>Variables & Data Types</h3>
+    <code>
+name = "Rahul"   # string
+age = 21         # int
+price = 99.5     # float
+is_active = True # boolean
+    </code>
+  </div>
 
-        <div class="grid">
-            <div class="card">
-                <h3>YouTube Playlists</h3>
-                <p>Step-by-step playlists for Python, SQL, Excel and Data Analytics with Hindi explanations.</p>
-                <a class="btn btn-ghost" href="https://www.youtube.com/@codeToCareerIndia/playlists" target="_blank">
-                    View Playlists
-                </a>
-            </div>
-            <div class="card">
-                <h3>Practice Files</h3>
-                <p>Download datasets and Excel files used in videos so you can practice along.</p>
-                <a class="btn btn-ghost" href="#" target="_blank">
-                    Coming Soon
-                </a>
-            </div>
-            <div class="card">
-                <h3>Community Updates</h3>
-                <p>Follow on Instagram for daily tips, reels, and updates on new series and live sessions.</p>
-                <a class="btn btn-ghost" href="https://www.instagram.com/codeToCareerIndia" target="_blank">
-                    Follow Now
-                </a>
-            </div>
-        </div>
-    </section>
+  <div class="card">
+    <h3>Type Casting</h3>
+    <code>
+x = "10"
+y = int(x)
+print(y + 5)
+    </code>
+  </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact & Collaboration</h2>
-        <div class="contact-box">
-            <p>
-                If you have doubts, feedback, or want to collaborate, feel free to contact any time.
-                Replies are usually within 24-48 hours.
-            </p>
+  <div class="card">
+    <h3>Input & Output</h3>
+    <code>
+name = input("Enter name: ")
+print("Welcome", name)
+    </code>
+  </div>
 
-            <p class="contact-label">Email</p>
-            <p>
-                <a href="mailto:codetocareerindia@gmail.com">
-                    codetocareerindia@gmail.com
-                </a>
-            </p>
+  <div class="card">
+    <h3>Indentation</h3>
+    <p>Python uses indentation instead of brackets.</p>
+    <code>
+if age > 18:
+    print("Adult")
+    </code>
+  </div>
+</section>
 
-            <p class="contact-label">Instagram DM</p>
-            <p>
-                <a href="https://www.instagram.com/codeToCareerIndia" target="_blank">
-                    @codeToCareerIndia
-                </a>
-            </p>
+<section id="operators">
+  <h2>Operators</h2>
+  <div class="card">
+    <p><b>Arithmetic:</b> + - * / % //</p>
+    <p><b>Assignment:</b> = += -=</p>
+    <p><b>Comparison:</b> == != > <</p>
+    <p><b>Logical:</b> and or not</p>
+    <p><b>Bitwise:</b> & | ^</p>
+    <p><b>Membership:</b> in, not in</p>
+    <p><b>Identity:</b> is, is not</p>
+  </div>
+</section>
 
-            <p class="contact-label">YouTube Channel</p>
-            <p>
-                <a href="https://www.youtube.com/@codeToCareerIndia" target="_blank">
-                    youtube.com/@codeToCareerIndia
-                </a>
-            </p>
-        </div>
-    </section>
-</div>
+<section id="control">
+  <h2>Control Flow</h2>
+  <div class="card">
+    <h3>If, Else, Elif</h3>
+    <code>
+if marks >= 75:
+    print("Distinction")
+elif marks >= 40:
+    print("Pass")
+else:
+    print("Fail")
+    </code>
+
+    <h3>Nested If</h3>
+    <code>
+if age > 18:
+    if has_id:
+        print("Allowed")
+    </code>
+
+    <h3>Match Case (Python 3.10+)</h3>
+    <code>
+match day:
+    case 1:
+        print("Monday")
+    case 2:
+        print("Tuesday")
+    </code>
+
+    <h3>Loops</h3>
+    <code>
+for i in range(1,6):
+    print(i)
+    </code>
+
+    <code>
+x = 0
+while x < 5:
+    x += 1
+    </code>
+
+    <h3>Break, Continue, Pass</h3>
+    <code>
+for i in range(5):
+    if i == 3:
+        break
+    print(i)
+    </code>
+  </div>
+</section>
+
+<section id="ds">
+  <h2>Data Structures</h2>
+  <div class="card">
+    <h3>Strings</h3>
+    <code>name = "Code To Career"</code>
+
+    <h3>Lists</h3>
+    <code>nums = [1,2,3,4]</code>
+
+    <h3>Tuples</h3>
+    <code>point = (10, 20)</code>
+
+    <h3>Sets</h3>
+    <code>unique = {1,2,3}</code>
+
+    <h3>Dictionaries</h3>
+    <code>student = {"name":"Amit", "age":20}</code>
+
+    <h3>List Comprehension</h3>
+    <code>squares = [x*x for x in range(5)]</code>
+
+    <h3>Dictionary Comprehension</h3>
+    <code>data = {x: x*x for x in range(5)}</code>
+  </div>
+</section>
+
+<section id="functions">
+  <h2>Functions</h2>
+  <div class="card">
+    <h3>Defining Functions</h3>
+    <code>
+def add(a, b):
+    return a + b
+    </code>
+
+    <h3>Function Arguments</h3>
+    <code>
+def greet(name="User"):
+    print("Hello", name)
+    </code>
+
+    <h3>*args and **kwargs</h3>
+    <code>
+def demo(*args, **kwargs):
+    print(args, kwargs)
+    </code>
+
+    <h3>Lambda Function</h3>
+    <code>square = lambda x: x*x</code>
+
+    <h3>Recursive Function</h3>
+    <code>
+def fact(n):
+    return 1 if n==0 else n*fact(n-1)
+    </code>
+  </div>
+</section>
+
+<section id="modules">
+  <h2>Modules & Packages</h2>
+  <div class="card">
+    <h3>Import Statement</h3>
+    <code>import math</code>
+
+    <h3>Built-in Modules</h3>
+    <code>print(math.sqrt(16))</code>
+
+    <h3>User-defined Modules</h3>
+    <code># mymodule.py
+# def hello(): print("Hello")</code>
+
+    <h3>Python Packages</h3>
+    <p>A package is a folder containing modules.</p>
+
+    <h3>pip & Virtual Environment</h3>
+    <code>pip install numpy</code>
+    <code>python -m venv env</code>
+  </div>
+</section>
 
 <footer>
-    © <span id="year"></span> Code To Career India · Built with HTML & CSS
+  <p>© 2025 Code To Career | Learn • Practice • Build</p>
+  <p>YouTube & Instagram: @codetocareerindia</p>
 </footer>
-
-<script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-</script>
 
 </body>
 </html>
